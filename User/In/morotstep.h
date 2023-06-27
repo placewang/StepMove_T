@@ -94,7 +94,20 @@ extern speedRampData MotorPr1,MotorPr2,MotorPr3,MotorPr4;
 extern speedRampData MotorPr5,MotorPr6,MotorPr7,MotorPr8;
 extern speedRampData MotorPr9,MotorPr10,MotorPr11,MotorPr12;
 
+signed char TIM2_Interrupt_Mt1(void);
+signed char TIM5_Interrupt_Mt2(void);
+signed char TIM6_Interrupt_Mt3(void);
 signed char TIM1_Interrupt_Mt4(void);
+
+signed char TIM8_Interrupt_Mt5(void);
+signed char TIM9_Interrupt_Mt6(void);
+signed char TIM10_Interrupt_Mt7(void);
+signed char TIM11_Interrupt_Mt8(void);
+
+signed char TIM12_Interrupt_Mt9(void);
+signed char TIM13_Interrupt_Mt10(void);
+signed char TIM7_Interrupt_Mt11_Mt12(void);
+
 #endif
 
 

@@ -147,18 +147,17 @@ void CAN0_RX0_IRQHandler(void)
         can_message_receive(CAN0,CAN_FIFO0,&receive_message);
         EnQueue(&Can1_revQueuebuff,receive_message);
         can_interrupt_flag_clear(CAN0,CAN_INT_FLAG_RFL0);
-    }
+    } 
 }
 
 /*
 MT1
 */
-uint16_t p=0;
 void TIMER2_IRQHandler(void)
 {
-//    myPrint("Timer2 inperrupt \n");
 
     timer_interrupt_flag_clear(TIMER2,TIMER_INT_FLAG_UP);
+    TIM2_Interrupt_Mt1();
 }
 
 /*
@@ -166,21 +165,18 @@ MT2
 */
 void TIMER5_DAC_IRQHandler(void)
 {
-//    myPrint("Timer5 inperrupt \n");
-     gpio_bit_toggle(GPIOB,GPIO_PIN_1); 
     timer_interrupt_flag_clear(TIMER5,TIMER_INT_UP);
+    TIM5_Interrupt_Mt2();
 }
 /*MT3*/
 void TIMER6_IRQHandler(void)
 {
-//    myPrint("Timer6 inperrupt \n");
-     gpio_bit_toggle(GPIOE,GPIO_PIN_7); 
     timer_interrupt_flag_clear(TIMER6,TIMER_INT_UP);
+    TIM6_Interrupt_Mt3();
 }
 /*MT4*/
 void TIMER1_IRQHandler(void)
 {
-//    myPrint("Timer1Mt4 inperrupt \n");
     timer_interrupt_flag_clear(TIMER1,TIMER_INT_UP);
     TIM1_Interrupt_Mt4();
 
@@ -188,65 +184,52 @@ void TIMER1_IRQHandler(void)
 /*MT5*/
 void TIMER0_BRK_TIMER8_IRQHandler(void)
 {
-//    myPrint("Timer8 inperrupt \n");
-    gpio_bit_toggle(GPIOD,GPIO_PIN_8); 
     timer_interrupt_flag_clear(TIMER8,TIMER_INT_UP);
+    TIM8_Interrupt_Mt5();
 }
 /*MT6*/
 void TIMER0_UP_TIMER9_IRQHandler(void)
 {
-//  myPrint("Timer9 inperrupt \n");
-    gpio_bit_toggle(GPIOD,GPIO_PIN_9); 
     timer_interrupt_flag_clear(TIMER9,TIMER_INT_UP);
+    TIM9_Interrupt_Mt6();
 }
 
 /*MT7*/
 void TIMER0_TRG_CMT_TIMER10_IRQHandler(void)
 {
-//  myPrint("Timer10 inperrupt \n");
-    gpio_bit_toggle(GPIOD,GPIO_PIN_10); 
     timer_interrupt_flag_clear(TIMER10,TIMER_INT_UP);
+    TIM10_Interrupt_Mt7();
 }
 /*MT8*/
 void TIMER7_BRK_TIMER11_IRQHandler(void)
-{
-//  myPrint("Timer11 inperrupt \n");
-    gpio_bit_toggle(GPIOD,GPIO_PIN_11); 
-    
+{    
     timer_interrupt_flag_clear(TIMER11,TIMER_INT_UP);
+    TIM11_Interrupt_Mt8();
 }
 /*MT9*/
 void TIMER7_UP_TIMER12_IRQHandler(void)
 {
-//  myPrint("Timer12 inperrupt \n");
-    gpio_bit_toggle(GPIOC,GPIO_PIN_6); 
     timer_interrupt_flag_clear(TIMER12,TIMER_INT_UP);
+    TIM12_Interrupt_Mt9();
 }
 /*MT10*/
 void TIMER7_TRG_CMT_TIMER13_IRQHandler(void)
 {
-//  myPrint("Timer13 inperrupt \n");
-    gpio_bit_toggle(GPIOC,GPIO_PIN_7); 
     timer_interrupt_flag_clear(TIMER13,TIMER_INT_UP);
+    TIM13_Interrupt_Mt10();
 }
 
 /*MT11/12*/
 void TIMER7_Channel_IRQHandler(void)
 {
-    uint16_t val1,val2;
     if(timer_interrupt_flag_get(TIMER7,TIMER_INT_FLAG_CH2))
     {
-        val1=timer_counter_read(TIMER7);
-//        myPrint("Timer7 CH2 \n");
-        timer_channel_output_pulse_value_config(TIMER7,TIMER_CH_2,0xffff&(val1+500));
-        timer_interrupt_flag_clear(TIMER7,TIMER_INT_FLAG_CH2);         
+
+        TIM7_Interrupt_Mt11_Mt12(); 
     }
     if(timer_interrupt_flag_get(TIMER7,TIMER_INT_FLAG_CH3))
     {
-        val2=timer_counter_read(TIMER7);
-//        myPrint("Timer7 CH3 \n");
-        timer_channel_output_pulse_value_config(TIMER7,TIMER_CH_3,0xffff&(val2+500));        
-        timer_interrupt_flag_clear(TIMER7,TIMER_INT_FLAG_CH3);        
+        TIM7_Interrupt_Mt11_Mt12();    
     }
 }
 

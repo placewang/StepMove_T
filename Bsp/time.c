@@ -96,8 +96,8 @@ void Time7_Step11And12_Gpio_Config(void)
     gpio_mode_set(MT11_STEP_PORT, GPIO_MODE_AF,GPIO_PUPD_NONE, MT11_STEP_PIN);
     gpio_mode_set(MT12_STEP_PORT, GPIO_MODE_AF,GPIO_PUPD_NONE, MT12_STEP_PIN);
     
-    gpio_output_options_set(MT11_STEP_PORT,GPIO_OTYPE_PP,GPIO_OSPEED_50MHZ,MT11_STEP_PIN);
-    gpio_output_options_set(MT12_STEP_PORT,GPIO_OTYPE_PP,GPIO_OSPEED_50MHZ,MT12_STEP_PIN);
+    gpio_output_options_set(MT11_STEP_PORT,GPIO_OTYPE_OD,GPIO_OSPEED_50MHZ,MT11_STEP_PIN);
+    gpio_output_options_set(MT12_STEP_PORT,GPIO_OTYPE_OD,GPIO_OSPEED_50MHZ,MT12_STEP_PIN);
     
     gpio_af_set(MT11_STEP_PORT,GPIO_AF_3,MT11_STEP_PIN);
     gpio_af_set(MT12_STEP_PORT,GPIO_AF_3,MT12_STEP_PIN);
@@ -482,7 +482,7 @@ void Timer7_Step11And12_config(void)
     timer_initpara.prescaler         = 200-1;
     timer_initpara.alignedmode       = TIMER_COUNTER_EDGE;
     timer_initpara.counterdirection  = TIMER_COUNTER_UP;
-    timer_initpara.period            = 65534;
+    timer_initpara.period            = 65535;
     timer_initpara.clockdivision     = TIMER_CKDIV_DIV1;
     timer_initpara.repetitioncounter = 0;
     timer_init(TIMER7,&timer_initpara);

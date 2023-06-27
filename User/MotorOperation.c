@@ -231,6 +231,10 @@ signed char Motor_Star_Set(unsigned char start,unsigned char end)
                            TIMER_INT_UP,TIMER_INT_UP,TIMER_INT_UP,TIMER_INT_UP,\
                            TIMER_INT_UP,TIMER_INT_UP,TIMER_INT_CH2,TIMER_INT_CH3
                         };
+    speedRampData *MtSt_S[13]={NULL,&MotorPr1,&MotorPr2,&MotorPr3,&MotorPr4,\
+                                  &MotorPr5,&MotorPr6,&MotorPr7,&MotorPr8,\
+                                  &MotorPr9,&MotorPr10,&MotorPr11,&MotorPr12 
+                            };
     if((start==0||end==0)||(start>12||end>12))
     {
         return -1;
@@ -239,14 +243,21 @@ signed char Motor_Star_Set(unsigned char start,unsigned char end)
     {
        timer_interrupt_enable(handle[i],source[i]);
        timer_enable(handle[i]);
+       MtSt_S[i]->MotorState=1; 
        /*此处为了规避芯片缺陷
          比较输出状态停止后仍然输出低频翻转造成的抖动
          启动时恢复状态管脚正常状态*/ 
        if(i==11)
+       {           
          gpio_output_options_set(MT11_STEP_PORT,GPIO_OTYPE_PP,GPIO_OSPEED_50MHZ,MT11_STEP_PIN);
-       else if(i==12) 
+         timer_channel_output_pulse_value_config(handle[i],source[i],1);
+       }      
+      else if(i==12) 
+      {    
          gpio_output_options_set(MT12_STEP_PORT,GPIO_OTYPE_PP,GPIO_OSPEED_50MHZ,MT12_STEP_PIN);
-       else
+         timer_channel_output_pulse_value_config(handle[i],source[i],1); 
+      }
+      else
          timer_autoreload_value_config(handle[i],1);  
     }
     return 0;
@@ -267,6 +278,10 @@ signed char Motor_Stop_Set(unsigned char start,unsigned char end)
                            TIMER_INT_UP,TIMER_INT_UP,TIMER_INT_UP,TIMER_INT_UP,\
                            TIMER_INT_UP,TIMER_INT_UP,TIMER_INT_CH2,TIMER_INT_CH3
                         };
+    speedRampData *MtSt_P[13]={NULL,&MotorPr1,&MotorPr2,&MotorPr3,&MotorPr4,\
+                                  &MotorPr5,&MotorPr6,&MotorPr7,&MotorPr8,\
+                                  &MotorPr9,&MotorPr10,&MotorPr11,&MotorPr12 
+                            };    
     if((start==0||end==0)||(start>12||end>12))
     {
         return -1;
@@ -275,6 +290,7 @@ signed char Motor_Stop_Set(unsigned char start,unsigned char end)
     {
        timer_interrupt_disable(handle[i],source[i]);
        timer_interrupt_flag_clear(handle[i],source[i]);
+       MtSt_P[i]->MotorState=0; 
        /*此处为了规避芯片缺陷
          比较输出状态停止后仍然输出低频翻转造成的抖动
          停止时强制变换管脚模式*/  
@@ -292,12 +308,16 @@ signed char Motor_Stop_Set(unsigned char start,unsigned char end)
 void TestFunction(void) 
 {
       Motor_Enbl_Set(1,MOROT_UPEN);   
+      Motor_Enbl_Set(2,MOROT_UPEN); 
+      Motor_Enbl_Set(3,MOROT_UPEN);     
 //    GetSensorSta();
 //    delay_1ms(600);    
 //    Motor_Fault_Get();
 //    delay_1ms(600);
       Motor_Microstep_Set(1,2);
-      Motor_Current_Set(1,12,1000);
+      Motor_Microstep_Set(2,2);
+      Motor_Microstep_Set(3,2);    
+      Motor_Current_Set(1,12,850);
 //      Motor_Star_Set(1,4);
 //      delay_1ms(2*100*10);
 //      Motor_Stop_Set(11,11);

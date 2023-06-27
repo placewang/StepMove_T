@@ -24,7 +24,8 @@ signed char Motor_Star_Set(unsigned char,unsigned char);
 signed char Motor_Stop_Set(unsigned char,unsigned char);
 /*motor step*/
 signed char Motor_MovePos(unsigned char, unsigned int ,signed int ,unsigned char);
-int8_t stepper_move_T(uint8_t ,uint8_t,int32_t , uint32_t , uint32_t , uint32_t );
+int8_t stepper_move_T( uint8_t starnum,uint8_t endnum,uint8_t mode, int32_t step,
+                       uint32_t accel, uint32_t decel, uint32_t speed);
 
 void TestFunction(void);
 #endif
