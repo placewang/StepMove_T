@@ -1,0 +1,966 @@
+Dependencies for Project 'GD32Motor12', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 6160000::V6.16::ARMCLANG
+F (.\CMSIS\GD\GD32F4xx\Source\system_gd32f4xx.c)(0x647D4F05)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CMSIS/GD/GD32F4xx/Include -I ./GD32F4xx_standard_peripheral/Include -I ./CMSIS/GD/GD32F4xx/Source/ARM -I ./CMSIS -I ./User/In -I ./Bsp-ID:/keilpacks/GigaDevice/GD32F4xx_DFP/3.0.4/Device/F4XX/Include-D__UVISION_VERSION="536" -DGD32F427 -DUSE_STDPERIPH_DRIVER -DGD32F427 -D__TARGET_FPU_VFP-o ./objects/system_gd32f4xx.o -MD)
+I (CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x647D66E3)
+I (D:\MDK5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (Bsp\uart.h)(0x6482EF9E)
+I (CMSIS\core_cm4.h)(0x6406F2A5)
+I (D:\MDK5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (CMSIS\core_cmInstr.h)(0x6406F2A5)
+I (CMSIS\core_cmFunc.h)(0x6406F2A5)
+I (CMSIS\core_cm4_simd.h)(0x6406F2A5)
+I (CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x6406F2A5)
+I (User\In\gd32f4xx_libopt.h)(0x6406F2B8)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x648BFC13)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x6406F2A4)
+I (D:\MDK5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x6406F2A4)
+F (.\User\gd32f4xx_it.c)(0x649A4296)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CMSIS/GD/GD32F4xx/Include -I ./GD32F4xx_standard_peripheral/Include -I ./CMSIS/GD/GD32F4xx/Source/ARM -I ./CMSIS -I ./User/In -I ./Bsp-ID:/keilpacks/GigaDevice/GD32F4xx_DFP/3.0.4/Device/F4XX/Include-D__UVISION_VERSION="536" -DGD32F427 -DUSE_STDPERIPH_DRIVER -DGD32F427 -D__TARGET_FPU_VFP-o ./objects/gd32f4xx_it.o -MD)
+I (User\In\gd32f4xx_it.h)(0x647D959E)
+I (CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x647D66E3)
+I (D:\MDK5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (Bsp\uart.h)(0x6482EF9E)
+I (CMSIS\core_cm4.h)(0x6406F2A5)
+I (D:\MDK5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (CMSIS\core_cmInstr.h)(0x6406F2A5)
+I (CMSIS\core_cmFunc.h)(0x6406F2A5)
+I (CMSIS\core_cm4_simd.h)(0x6406F2A5)
+I (CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x6406F2A5)
+I (User\In\gd32f4xx_libopt.h)(0x6406F2B8)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x648BFC13)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x6406F2A4)
+I (D:\MDK5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x6406F2A4)
+I (User\In\systick.h)(0x647DCA1B)
+I (User\In\queue.h)(0x647DCBAC)
+I (User\In\morotstep.h)(0x649A476D)
+F (.\User\systick.c)(0x648ABCAF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CMSIS/GD/GD32F4xx/Include -I ./GD32F4xx_standard_peripheral/Include -I ./CMSIS/GD/GD32F4xx/Source/ARM -I ./CMSIS -I ./User/In -I ./Bsp-ID:/keilpacks/GigaDevice/GD32F4xx_DFP/3.0.4/Device/F4XX/Include-D__UVISION_VERSION="536" -DGD32F427 -DUSE_STDPERIPH_DRIVER -DGD32F427 -D__TARGET_FPU_VFP-o ./objects/systick.o -MD)
+I (CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x647D66E3)
+I (D:\MDK5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (Bsp\uart.h)(0x6482EF9E)
+I (CMSIS\core_cm4.h)(0x6406F2A5)
+I (D:\MDK5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (CMSIS\core_cmInstr.h)(0x6406F2A5)
+I (CMSIS\core_cmFunc.h)(0x6406F2A5)
+I (CMSIS\core_cm4_simd.h)(0x6406F2A5)
+I (CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x6406F2A5)
+I (User\In\gd32f4xx_libopt.h)(0x6406F2B8)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x648BFC13)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x6406F2A4)
+I (D:\MDK5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x6406F2A4)
+I (User\In\systick.h)(0x647DCA1B)
+F (.\CMSIS\GD\GD32F4xx\Source\ARM\startup_gd32f407_427.s)(0x64998A3B)(--target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -masm=auto -c-gdwarf-4 -Wa,armasm,--pd,"__MICROLIB SETA 1"-ID:/keilpacks/GigaDevice/GD32F4xx_DFP/3.0.4/Device/F4XX/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 536" -Wa,armasm,--pd,"GD32F427 SETA 1"-o ./objects/startup_gd32f407_427.o)
+F (.\User\main.c)(0x649A4BC0)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CMSIS/GD/GD32F4xx/Include -I ./GD32F4xx_standard_peripheral/Include -I ./CMSIS/GD/GD32F4xx/Source/ARM -I ./CMSIS -I ./User/In -I ./Bsp-ID:/keilpacks/GigaDevice/GD32F4xx_DFP/3.0.4/Device/F4XX/Include-D__UVISION_VERSION="536" -DGD32F427 -DUSE_STDPERIPH_DRIVER -DGD32F427 -D__TARGET_FPU_VFP-o ./objects/main.o -MD)
+I (CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x647D66E3)
+I (D:\MDK5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (Bsp\uart.h)(0x6482EF9E)
+I (CMSIS\core_cm4.h)(0x6406F2A5)
+I (D:\MDK5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (CMSIS\core_cmInstr.h)(0x6406F2A5)
+I (CMSIS\core_cmFunc.h)(0x6406F2A5)
+I (CMSIS\core_cm4_simd.h)(0x6406F2A5)
+I (CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x6406F2A5)
+I (User\In\gd32f4xx_libopt.h)(0x6406F2B8)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x648BFC13)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x6406F2A4)
+I (D:\MDK5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x6406F2A4)
+I (User\In\systick.h)(0x647DCA1B)
+I (Bsp\Gpio.h)(0x648AC6EA)
+I (Bsp\can.h)(0x647DBE31)
+I (Bsp\time.h)(0x648ACF80)
+I (User\In\morot.h)(0x64997C64)
+I (User\In\morotstep.h)(0x649A476D)
+F (.\User\queue.c)(0x6486C17C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CMSIS/GD/GD32F4xx/Include -I ./GD32F4xx_standard_peripheral/Include -I ./CMSIS/GD/GD32F4xx/Source/ARM -I ./CMSIS -I ./User/In -I ./Bsp-ID:/keilpacks/GigaDevice/GD32F4xx_DFP/3.0.4/Device/F4XX/Include-D__UVISION_VERSION="536" -DGD32F427 -DUSE_STDPERIPH_DRIVER -DGD32F427 -D__TARGET_FPU_VFP-o ./objects/queue.o -MD)
+I (User\In\queue.h)(0x647DCBAC)
+I (CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x647D66E3)
+I (D:\MDK5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (Bsp\uart.h)(0x6482EF9E)
+I (CMSIS\core_cm4.h)(0x6406F2A5)
+I (D:\MDK5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (CMSIS\core_cmInstr.h)(0x6406F2A5)
+I (CMSIS\core_cmFunc.h)(0x6406F2A5)
+I (CMSIS\core_cm4_simd.h)(0x6406F2A5)
+I (CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x6406F2A5)
+I (User\In\gd32f4xx_libopt.h)(0x6406F2B8)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x648BFC13)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x6406F2A4)
+I (D:\MDK5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x6406F2A4)
+F (.\User\MotorOperation.c)(0x64997C96)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CMSIS/GD/GD32F4xx/Include -I ./GD32F4xx_standard_peripheral/Include -I ./CMSIS/GD/GD32F4xx/Source/ARM -I ./CMSIS -I ./User/In -I ./Bsp-ID:/keilpacks/GigaDevice/GD32F4xx_DFP/3.0.4/Device/F4XX/Include-D__UVISION_VERSION="536" -DGD32F427 -DUSE_STDPERIPH_DRIVER -DGD32F427 -D__TARGET_FPU_VFP-o ./objects/motoroperation.o -MD)
+I (CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x647D66E3)
+I (D:\MDK5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (Bsp\uart.h)(0x6482EF9E)
+I (CMSIS\core_cm4.h)(0x6406F2A5)
+I (D:\MDK5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (CMSIS\core_cmInstr.h)(0x6406F2A5)
+I (CMSIS\core_cmFunc.h)(0x6406F2A5)
+I (CMSIS\core_cm4_simd.h)(0x6406F2A5)
+I (CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x6406F2A5)
+I (User\In\gd32f4xx_libopt.h)(0x6406F2B8)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x648BFC13)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x6406F2A4)
+I (D:\MDK5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x6406F2A4)
+I (Bsp\Gpio.h)(0x648AC6EA)
+I (User\In\systick.h)(0x647DCA1B)
+I (User\In\morot.h)(0x64997C64)
+I (User\In\morotstep.h)(0x649A476D)
+I (Bsp\time.h)(0x648ACF80)
+F (.\User\MotorStep.c)(0x649A4B7B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CMSIS/GD/GD32F4xx/Include -I ./GD32F4xx_standard_peripheral/Include -I ./CMSIS/GD/GD32F4xx/Source/ARM -I ./CMSIS -I ./User/In -I ./Bsp-ID:/keilpacks/GigaDevice/GD32F4xx_DFP/3.0.4/Device/F4XX/Include-D__UVISION_VERSION="536" -DGD32F427 -DUSE_STDPERIPH_DRIVER -DGD32F427 -D__TARGET_FPU_VFP-o ./objects/motorstep.o -MD)
+I (CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x647D66E3)
+I (D:\MDK5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (Bsp\uart.h)(0x6482EF9E)
+I (CMSIS\core_cm4.h)(0x6406F2A5)
+I (D:\MDK5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (CMSIS\core_cmInstr.h)(0x6406F2A5)
+I (CMSIS\core_cmFunc.h)(0x6406F2A5)
+I (CMSIS\core_cm4_simd.h)(0x6406F2A5)
+I (CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x6406F2A5)
+I (User\In\gd32f4xx_libopt.h)(0x6406F2B8)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x648BFC13)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x6406F2A4)
+I (D:\MDK5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x6406F2A4)
+I (Bsp\Gpio.h)(0x648AC6EA)
+I (User\In\morotstep.h)(0x649A476D)
+I (User\In\morot.h)(0x64997C64)
+I (Bsp\time.h)(0x648ACF80)
+I (D:\MDK5\ARM\ARMCLANG\include\math.h)(0x603507CA)
+F (.\Bsp\Gpio.c)(0x648A6E2B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CMSIS/GD/GD32F4xx/Include -I ./GD32F4xx_standard_peripheral/Include -I ./CMSIS/GD/GD32F4xx/Source/ARM -I ./CMSIS -I ./User/In -I ./Bsp-ID:/keilpacks/GigaDevice/GD32F4xx_DFP/3.0.4/Device/F4XX/Include-D__UVISION_VERSION="536" -DGD32F427 -DUSE_STDPERIPH_DRIVER -DGD32F427 -D__TARGET_FPU_VFP-o ./objects/gpio.o -MD)
+I (CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x647D66E3)
+I (D:\MDK5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (Bsp\uart.h)(0x6482EF9E)
+I (CMSIS\core_cm4.h)(0x6406F2A5)
+I (D:\MDK5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (CMSIS\core_cmInstr.h)(0x6406F2A5)
+I (CMSIS\core_cmFunc.h)(0x6406F2A5)
+I (CMSIS\core_cm4_simd.h)(0x6406F2A5)
+I (CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x6406F2A5)
+I (User\In\gd32f4xx_libopt.h)(0x6406F2B8)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x648BFC13)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x6406F2A4)
+I (D:\MDK5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x6406F2A4)
+I (Bsp\Gpio.h)(0x648AC6EA)
+F (.\Bsp\uart.c)(0x647D6747)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CMSIS/GD/GD32F4xx/Include -I ./GD32F4xx_standard_peripheral/Include -I ./CMSIS/GD/GD32F4xx/Source/ARM -I ./CMSIS -I ./User/In -I ./Bsp-ID:/keilpacks/GigaDevice/GD32F4xx_DFP/3.0.4/Device/F4XX/Include-D__UVISION_VERSION="536" -DGD32F427 -DUSE_STDPERIPH_DRIVER -DGD32F427 -D__TARGET_FPU_VFP-o ./objects/uart.o -MD)
+I (CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x647D66E3)
+I (D:\MDK5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (Bsp\uart.h)(0x6482EF9E)
+I (CMSIS\core_cm4.h)(0x6406F2A5)
+I (D:\MDK5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (CMSIS\core_cmInstr.h)(0x6406F2A5)
+I (CMSIS\core_cmFunc.h)(0x6406F2A5)
+I (CMSIS\core_cm4_simd.h)(0x6406F2A5)
+I (CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x6406F2A5)
+I (User\In\gd32f4xx_libopt.h)(0x6406F2B8)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x648BFC13)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x6406F2A4)
+I (D:\MDK5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x6406F2A4)
+F (.\Bsp\can.c)(0x647DCCFF)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CMSIS/GD/GD32F4xx/Include -I ./GD32F4xx_standard_peripheral/Include -I ./CMSIS/GD/GD32F4xx/Source/ARM -I ./CMSIS -I ./User/In -I ./Bsp-ID:/keilpacks/GigaDevice/GD32F4xx_DFP/3.0.4/Device/F4XX/Include-D__UVISION_VERSION="536" -DGD32F427 -DUSE_STDPERIPH_DRIVER -DGD32F427 -D__TARGET_FPU_VFP-o ./objects/can.o -MD)
+I (CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x647D66E3)
+I (D:\MDK5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (Bsp\uart.h)(0x6482EF9E)
+I (CMSIS\core_cm4.h)(0x6406F2A5)
+I (D:\MDK5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (CMSIS\core_cmInstr.h)(0x6406F2A5)
+I (CMSIS\core_cmFunc.h)(0x6406F2A5)
+I (CMSIS\core_cm4_simd.h)(0x6406F2A5)
+I (CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x6406F2A5)
+I (User\In\gd32f4xx_libopt.h)(0x6406F2B8)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x648BFC13)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x6406F2A4)
+I (D:\MDK5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x6406F2A4)
+I (Bsp\can.h)(0x647DBE31)
+I (Bsp\Gpio.h)(0x648AC6EA)
+I (User\In\queue.h)(0x647DCBAC)
+F (.\Bsp\time.c)(0x649972A1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CMSIS/GD/GD32F4xx/Include -I ./GD32F4xx_standard_peripheral/Include -I ./CMSIS/GD/GD32F4xx/Source/ARM -I ./CMSIS -I ./User/In -I ./Bsp-ID:/keilpacks/GigaDevice/GD32F4xx_DFP/3.0.4/Device/F4XX/Include-D__UVISION_VERSION="536" -DGD32F427 -DUSE_STDPERIPH_DRIVER -DGD32F427 -D__TARGET_FPU_VFP-o ./objects/time.o -MD)
+I (CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x647D66E3)
+I (D:\MDK5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (Bsp\uart.h)(0x6482EF9E)
+I (CMSIS\core_cm4.h)(0x6406F2A5)
+I (D:\MDK5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (CMSIS\core_cmInstr.h)(0x6406F2A5)
+I (CMSIS\core_cmFunc.h)(0x6406F2A5)
+I (CMSIS\core_cm4_simd.h)(0x6406F2A5)
+I (CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x6406F2A5)
+I (User\In\gd32f4xx_libopt.h)(0x6406F2B8)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x648BFC13)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x6406F2A4)
+I (D:\MDK5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x6406F2A4)
+I (Bsp\time.h)(0x648ACF80)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_crc.c)(0x6406F2A4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CMSIS/GD/GD32F4xx/Include -I ./GD32F4xx_standard_peripheral/Include -I ./CMSIS/GD/GD32F4xx/Source/ARM -I ./CMSIS -I ./User/In -I ./Bsp-ID:/keilpacks/GigaDevice/GD32F4xx_DFP/3.0.4/Device/F4XX/Include-D__UVISION_VERSION="536" -DGD32F427 -DUSE_STDPERIPH_DRIVER -DGD32F427 -D__TARGET_FPU_VFP-o ./objects/gd32f4xx_crc.o -MD)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x6406F2A4)
+I (CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x647D66E3)
+I (D:\MDK5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (Bsp\uart.h)(0x6482EF9E)
+I (CMSIS\core_cm4.h)(0x6406F2A5)
+I (D:\MDK5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (CMSIS\core_cmInstr.h)(0x6406F2A5)
+I (CMSIS\core_cmFunc.h)(0x6406F2A5)
+I (CMSIS\core_cm4_simd.h)(0x6406F2A5)
+I (CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x6406F2A5)
+I (User\In\gd32f4xx_libopt.h)(0x6406F2B8)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x648BFC13)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x6406F2A4)
+I (D:\MDK5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x6406F2A4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_rtc.c)(0x6406F2A4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CMSIS/GD/GD32F4xx/Include -I ./GD32F4xx_standard_peripheral/Include -I ./CMSIS/GD/GD32F4xx/Source/ARM -I ./CMSIS -I ./User/In -I ./Bsp-ID:/keilpacks/GigaDevice/GD32F4xx_DFP/3.0.4/Device/F4XX/Include-D__UVISION_VERSION="536" -DGD32F427 -DUSE_STDPERIPH_DRIVER -DGD32F427 -D__TARGET_FPU_VFP-o ./objects/gd32f4xx_rtc.o -MD)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x6406F2A4)
+I (CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x647D66E3)
+I (D:\MDK5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (Bsp\uart.h)(0x6482EF9E)
+I (CMSIS\core_cm4.h)(0x6406F2A5)
+I (D:\MDK5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (CMSIS\core_cmInstr.h)(0x6406F2A5)
+I (CMSIS\core_cmFunc.h)(0x6406F2A5)
+I (CMSIS\core_cm4_simd.h)(0x6406F2A5)
+I (CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x6406F2A5)
+I (User\In\gd32f4xx_libopt.h)(0x6406F2B8)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x648BFC13)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x6406F2A4)
+I (D:\MDK5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x6406F2A4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_gpio.c)(0x6406F2A5)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CMSIS/GD/GD32F4xx/Include -I ./GD32F4xx_standard_peripheral/Include -I ./CMSIS/GD/GD32F4xx/Source/ARM -I ./CMSIS -I ./User/In -I ./Bsp-ID:/keilpacks/GigaDevice/GD32F4xx_DFP/3.0.4/Device/F4XX/Include-D__UVISION_VERSION="536" -DGD32F427 -DUSE_STDPERIPH_DRIVER -DGD32F427 -D__TARGET_FPU_VFP-o ./objects/gd32f4xx_gpio.o -MD)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x6406F2A4)
+I (CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x647D66E3)
+I (D:\MDK5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (Bsp\uart.h)(0x6482EF9E)
+I (CMSIS\core_cm4.h)(0x6406F2A5)
+I (D:\MDK5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (CMSIS\core_cmInstr.h)(0x6406F2A5)
+I (CMSIS\core_cmFunc.h)(0x6406F2A5)
+I (CMSIS\core_cm4_simd.h)(0x6406F2A5)
+I (CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x6406F2A5)
+I (User\In\gd32f4xx_libopt.h)(0x6406F2B8)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x648BFC13)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x6406F2A4)
+I (D:\MDK5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x6406F2A4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_sdio.c)(0x6406F2A5)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CMSIS/GD/GD32F4xx/Include -I ./GD32F4xx_standard_peripheral/Include -I ./CMSIS/GD/GD32F4xx/Source/ARM -I ./CMSIS -I ./User/In -I ./Bsp-ID:/keilpacks/GigaDevice/GD32F4xx_DFP/3.0.4/Device/F4XX/Include-D__UVISION_VERSION="536" -DGD32F427 -DUSE_STDPERIPH_DRIVER -DGD32F427 -D__TARGET_FPU_VFP-o ./objects/gd32f4xx_sdio.o -MD)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x6406F2A4)
+I (CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x647D66E3)
+I (D:\MDK5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (Bsp\uart.h)(0x6482EF9E)
+I (CMSIS\core_cm4.h)(0x6406F2A5)
+I (D:\MDK5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (CMSIS\core_cmInstr.h)(0x6406F2A5)
+I (CMSIS\core_cmFunc.h)(0x6406F2A5)
+I (CMSIS\core_cm4_simd.h)(0x6406F2A5)
+I (CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x6406F2A5)
+I (User\In\gd32f4xx_libopt.h)(0x6406F2B8)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x648BFC13)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x6406F2A4)
+I (D:\MDK5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x6406F2A4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_timer.c)(0x6486B5B0)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CMSIS/GD/GD32F4xx/Include -I ./GD32F4xx_standard_peripheral/Include -I ./CMSIS/GD/GD32F4xx/Source/ARM -I ./CMSIS -I ./User/In -I ./Bsp-ID:/keilpacks/GigaDevice/GD32F4xx_DFP/3.0.4/Device/F4XX/Include-D__UVISION_VERSION="536" -DGD32F427 -DUSE_STDPERIPH_DRIVER -DGD32F427 -D__TARGET_FPU_VFP-o ./objects/gd32f4xx_timer.o -MD)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x648BFC13)
+I (CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x647D66E3)
+I (D:\MDK5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (Bsp\uart.h)(0x6482EF9E)
+I (CMSIS\core_cm4.h)(0x6406F2A5)
+I (D:\MDK5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (CMSIS\core_cmInstr.h)(0x6406F2A5)
+I (CMSIS\core_cmFunc.h)(0x6406F2A5)
+I (CMSIS\core_cm4_simd.h)(0x6406F2A5)
+I (CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x6406F2A5)
+I (User\In\gd32f4xx_libopt.h)(0x6406F2B8)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x6406F2A4)
+I (D:\MDK5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x6406F2A4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_usart.c)(0x6406F2A4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CMSIS/GD/GD32F4xx/Include -I ./GD32F4xx_standard_peripheral/Include -I ./CMSIS/GD/GD32F4xx/Source/ARM -I ./CMSIS -I ./User/In -I ./Bsp-ID:/keilpacks/GigaDevice/GD32F4xx_DFP/3.0.4/Device/F4XX/Include-D__UVISION_VERSION="536" -DGD32F427 -DUSE_STDPERIPH_DRIVER -DGD32F427 -D__TARGET_FPU_VFP-o ./objects/gd32f4xx_usart.o -MD)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x6406F2A4)
+I (CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x647D66E3)
+I (D:\MDK5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (Bsp\uart.h)(0x6482EF9E)
+I (CMSIS\core_cm4.h)(0x6406F2A5)
+I (D:\MDK5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (CMSIS\core_cmInstr.h)(0x6406F2A5)
+I (CMSIS\core_cmFunc.h)(0x6406F2A5)
+I (CMSIS\core_cm4_simd.h)(0x6406F2A5)
+I (CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x6406F2A5)
+I (User\In\gd32f4xx_libopt.h)(0x6406F2B8)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x648BFC13)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x6406F2A4)
+I (D:\MDK5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x6406F2A4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_wwdgt.c)(0x6406F2A4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CMSIS/GD/GD32F4xx/Include -I ./GD32F4xx_standard_peripheral/Include -I ./CMSIS/GD/GD32F4xx/Source/ARM -I ./CMSIS -I ./User/In -I ./Bsp-ID:/keilpacks/GigaDevice/GD32F4xx_DFP/3.0.4/Device/F4XX/Include-D__UVISION_VERSION="536" -DGD32F427 -DUSE_STDPERIPH_DRIVER -DGD32F427 -D__TARGET_FPU_VFP-o ./objects/gd32f4xx_wwdgt.o -MD)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x6406F2A4)
+I (CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x647D66E3)
+I (D:\MDK5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (Bsp\uart.h)(0x6482EF9E)
+I (CMSIS\core_cm4.h)(0x6406F2A5)
+I (D:\MDK5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (CMSIS\core_cmInstr.h)(0x6406F2A5)
+I (CMSIS\core_cmFunc.h)(0x6406F2A5)
+I (CMSIS\core_cm4_simd.h)(0x6406F2A5)
+I (CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x6406F2A5)
+I (User\In\gd32f4xx_libopt.h)(0x6406F2B8)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x648BFC13)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x6406F2A4)
+I (D:\MDK5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x6406F2A4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_fwdgt.c)(0x6406F2A4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CMSIS/GD/GD32F4xx/Include -I ./GD32F4xx_standard_peripheral/Include -I ./CMSIS/GD/GD32F4xx/Source/ARM -I ./CMSIS -I ./User/In -I ./Bsp-ID:/keilpacks/GigaDevice/GD32F4xx_DFP/3.0.4/Device/F4XX/Include-D__UVISION_VERSION="536" -DGD32F427 -DUSE_STDPERIPH_DRIVER -DGD32F427 -D__TARGET_FPU_VFP-o ./objects/gd32f4xx_fwdgt.o -MD)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x6406F2A4)
+I (CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x647D66E3)
+I (D:\MDK5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (Bsp\uart.h)(0x6482EF9E)
+I (CMSIS\core_cm4.h)(0x6406F2A5)
+I (D:\MDK5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (CMSIS\core_cmInstr.h)(0x6406F2A5)
+I (CMSIS\core_cmFunc.h)(0x6406F2A5)
+I (CMSIS\core_cm4_simd.h)(0x6406F2A5)
+I (CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x6406F2A5)
+I (User\In\gd32f4xx_libopt.h)(0x6406F2B8)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x648BFC13)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x6406F2A4)
+I (D:\MDK5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x6406F2A4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_can.c)(0x6406F2A4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CMSIS/GD/GD32F4xx/Include -I ./GD32F4xx_standard_peripheral/Include -I ./CMSIS/GD/GD32F4xx/Source/ARM -I ./CMSIS -I ./User/In -I ./Bsp-ID:/keilpacks/GigaDevice/GD32F4xx_DFP/3.0.4/Device/F4XX/Include-D__UVISION_VERSION="536" -DGD32F427 -DUSE_STDPERIPH_DRIVER -DGD32F427 -D__TARGET_FPU_VFP-o ./objects/gd32f4xx_can.o -MD)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x6406F2A4)
+I (CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x647D66E3)
+I (D:\MDK5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (Bsp\uart.h)(0x6482EF9E)
+I (CMSIS\core_cm4.h)(0x6406F2A5)
+I (D:\MDK5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (CMSIS\core_cmInstr.h)(0x6406F2A5)
+I (CMSIS\core_cmFunc.h)(0x6406F2A5)
+I (CMSIS\core_cm4_simd.h)(0x6406F2A5)
+I (CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x6406F2A5)
+I (User\In\gd32f4xx_libopt.h)(0x6406F2B8)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x648BFC13)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x6406F2A4)
+I (D:\MDK5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x6406F2A4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_dbg.c)(0x6406F2A4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CMSIS/GD/GD32F4xx/Include -I ./GD32F4xx_standard_peripheral/Include -I ./CMSIS/GD/GD32F4xx/Source/ARM -I ./CMSIS -I ./User/In -I ./Bsp-ID:/keilpacks/GigaDevice/GD32F4xx_DFP/3.0.4/Device/F4XX/Include-D__UVISION_VERSION="536" -DGD32F427 -DUSE_STDPERIPH_DRIVER -DGD32F427 -D__TARGET_FPU_VFP-o ./objects/gd32f4xx_dbg.o -MD)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x6406F2A4)
+I (CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x647D66E3)
+I (D:\MDK5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (Bsp\uart.h)(0x6482EF9E)
+I (CMSIS\core_cm4.h)(0x6406F2A5)
+I (D:\MDK5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (CMSIS\core_cmInstr.h)(0x6406F2A5)
+I (CMSIS\core_cmFunc.h)(0x6406F2A5)
+I (CMSIS\core_cm4_simd.h)(0x6406F2A5)
+I (CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x6406F2A5)
+I (User\In\gd32f4xx_libopt.h)(0x6406F2B8)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x648BFC13)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x6406F2A4)
+I (D:\MDK5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x6406F2A4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_dci.c)(0x6406F2A4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CMSIS/GD/GD32F4xx/Include -I ./GD32F4xx_standard_peripheral/Include -I ./CMSIS/GD/GD32F4xx/Source/ARM -I ./CMSIS -I ./User/In -I ./Bsp-ID:/keilpacks/GigaDevice/GD32F4xx_DFP/3.0.4/Device/F4XX/Include-D__UVISION_VERSION="536" -DGD32F427 -DUSE_STDPERIPH_DRIVER -DGD32F427 -D__TARGET_FPU_VFP-o ./objects/gd32f4xx_dci.o -MD)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x6406F2A4)
+I (CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x647D66E3)
+I (D:\MDK5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (Bsp\uart.h)(0x6482EF9E)
+I (CMSIS\core_cm4.h)(0x6406F2A5)
+I (D:\MDK5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (CMSIS\core_cmInstr.h)(0x6406F2A5)
+I (CMSIS\core_cmFunc.h)(0x6406F2A5)
+I (CMSIS\core_cm4_simd.h)(0x6406F2A5)
+I (CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x6406F2A5)
+I (User\In\gd32f4xx_libopt.h)(0x6406F2B8)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x648BFC13)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x6406F2A4)
+I (D:\MDK5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x6406F2A4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_rcu.c)(0x6406F2A4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CMSIS/GD/GD32F4xx/Include -I ./GD32F4xx_standard_peripheral/Include -I ./CMSIS/GD/GD32F4xx/Source/ARM -I ./CMSIS -I ./User/In -I ./Bsp-ID:/keilpacks/GigaDevice/GD32F4xx_DFP/3.0.4/Device/F4XX/Include-D__UVISION_VERSION="536" -DGD32F427 -DUSE_STDPERIPH_DRIVER -DGD32F427 -D__TARGET_FPU_VFP-o ./objects/gd32f4xx_rcu.o -MD)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x6406F2A4)
+I (CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x647D66E3)
+I (D:\MDK5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (Bsp\uart.h)(0x6482EF9E)
+I (CMSIS\core_cm4.h)(0x6406F2A5)
+I (D:\MDK5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (CMSIS\core_cmInstr.h)(0x6406F2A5)
+I (CMSIS\core_cmFunc.h)(0x6406F2A5)
+I (CMSIS\core_cm4_simd.h)(0x6406F2A5)
+I (CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x6406F2A5)
+I (User\In\gd32f4xx_libopt.h)(0x6406F2B8)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x648BFC13)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x6406F2A4)
+I (D:\MDK5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x6406F2A4)
+F (.\GD32F4xx_standard_peripheral\Source\gd32f4xx_misc.c)(0x6406F2A5)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ./CMSIS/GD/GD32F4xx/Include -I ./GD32F4xx_standard_peripheral/Include -I ./CMSIS/GD/GD32F4xx/Source/ARM -I ./CMSIS -I ./User/In -I ./Bsp-ID:/keilpacks/GigaDevice/GD32F4xx_DFP/3.0.4/Device/F4XX/Include-D__UVISION_VERSION="536" -DGD32F427 -DUSE_STDPERIPH_DRIVER -DGD32F427 -D__TARGET_FPU_VFP-o ./objects/gd32f4xx_misc.o -MD)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_misc.h)(0x6406F2A4)
+I (CMSIS\GD\GD32F4xx\Include\gd32f4xx.h)(0x647D66E3)
+I (D:\MDK5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (Bsp\uart.h)(0x6482EF9E)
+I (CMSIS\core_cm4.h)(0x6406F2A5)
+I (D:\MDK5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (CMSIS\core_cmInstr.h)(0x6406F2A5)
+I (CMSIS\core_cmFunc.h)(0x6406F2A5)
+I (CMSIS\core_cm4_simd.h)(0x6406F2A5)
+I (CMSIS\GD\GD32F4xx\Include\system_gd32f4xx.h)(0x6406F2A5)
+I (User\In\gd32f4xx_libopt.h)(0x6406F2B8)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rcu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_adc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_can.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_crc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_ctc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dac.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dbg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dci.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_dma.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exti.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fmc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_fwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_gpio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_syscfg.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_i2c.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_iref.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_pmu.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_rtc.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_sdio.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_spi.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_timer.h)(0x648BFC13)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_trng.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_usart.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_wwdgt.h)(0x6406F2A4)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_enet.h)(0x6406F2A4)
+I (D:\MDK5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
+I (GD32F4xx_standard_peripheral\Include\gd32f4xx_exmc.h)(0x6406F2A4)
