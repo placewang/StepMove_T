@@ -150,19 +150,14 @@ void CAN0_RX0_IRQHandler(void)
     } 
 }
 
-/*
-MT1
-*/
+/*MT1*/
 void TIMER2_IRQHandler(void)
 {
-
     timer_interrupt_flag_clear(TIMER2,TIMER_INT_FLAG_UP);
     TIM2_Interrupt_Mt1();
 }
 
-/*
-MT2
-*/
+/*MT2*/
 void TIMER5_DAC_IRQHandler(void)
 {
     timer_interrupt_flag_clear(TIMER5,TIMER_INT_UP);
@@ -245,5 +240,6 @@ void SysTick_Handler(void)
     LedTimeCount++;
     //Can0fa·¢ËÍ¼ÆÊ± 
     Can0sendtimeout++;
+    Motor_Home_CountTime();
     delay_decrement();
 }

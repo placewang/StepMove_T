@@ -25,7 +25,14 @@ enum MotorNum
     Motor12  
 };
 
-
+/*
+电机工作状态标志
+*/
+enum MotorWorkFlag
+{
+    HomeEnd=1,       //回零完成
+    HomeEr=4,        //回零超时 
+};
 
 
 
@@ -54,6 +61,29 @@ enum MotorNum
 #define T1_FREQ_148       ((float)((T1_FREQ*0.676)/10)) // 0.69为误差修正值(计算过程，文档中有写)
 #define A_SQ              ((float)(2*100000*ALPHA)) 
 #define A_x200            ((float)(200*ALPHA))
+/*
+电机运行参数
+*/
+typedef struct
+{
+    unsigned char  HomeSta;      //电机回零状态
+    unsigned char  MotorSta;     //电机工作状态 参考 MotorWorkFlag
+    unsigned short HomeTimeOut;  //回零计时
+    
+    unsigned short RunCurrent;   //运行电流
+    unsigned int   RunSpeed;     //运行速度
+    
+    unsigned int   RestSpeed;    //回零速度  
+    unsigned int   RestPos;      //回零值     
+    signed int     HomeOffset;   //回零偏移量
+    
+    unsigned int   H_accel;      //回零加速度
+    unsigned int   H_decel;      //回零减速度
+    unsigned int   R_accel;      //运行加速度
+    unsigned int   R_decel;      //运行减速度    
+    
+}MotorRun;
+
 
 /*梯形加减速相关变量*/
 typedef struct 
@@ -94,6 +124,10 @@ extern speedRampData MotorPr1,MotorPr2,MotorPr3,MotorPr4;
 extern speedRampData MotorPr5,MotorPr6,MotorPr7,MotorPr8;
 extern speedRampData MotorPr9,MotorPr10,MotorPr11,MotorPr12;
 
+extern volatile MotorRun Mt_Move_1,Mt_Move_2,Mt_Move_3,Mt_Move_4;
+extern volatile MotorRun Mt_Move_5,Mt_Move_6,Mt_Move_7,Mt_Move_8;
+extern volatile MotorRun Mt_Move_9,Mt_Move_10,Mt_Move_11,Mt_Move_12;
+
 signed char TIM2_Interrupt_Mt1(void);
 signed char TIM5_Interrupt_Mt2(void);
 signed char TIM6_Interrupt_Mt3(void);
@@ -108,6 +142,7 @@ signed char TIM12_Interrupt_Mt9(void);
 signed char TIM13_Interrupt_Mt10(void);
 signed char TIM7_Interrupt_Mt11_Mt12(void);
 
+void Motor_Home_CountTime(void);
 #endif
 
 

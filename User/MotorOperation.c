@@ -6,8 +6,6 @@
 #include "time.h"
 
 
-
-
 /*
 电机方向设置
 Mnum:电机编号
@@ -42,7 +40,7 @@ signed char Motor_Dir_Set(unsigned char Munm,char Dr)
 
 /*
 电机方向设置批量
-start:电机起始编号
+start:电机起始编号西安
 end:  电机结束编号
 Dr： 设置反向
 */
@@ -52,7 +50,7 @@ signed char Motor_DirS_Set(unsigned char start,uint8_t end, char Dr)
                           MOTORDIR4_Port,MOTORDIR5_Port,MOTORDIR6_Port,\
                           MOTORDIR7_Port,MOTORDIR8_Port,MOTORDIR9_Port,\
                           MOTORDIR10_Port,MOTORDIR11_Port,MOTORDIR12_Port       
-                        };
+                       };
     uint32_t Pin[13]={0,MOTORDIR1_Pin,MOTORDIR2_Pin,MOTORDIR3_Pin,\
                         MOTORDIR4_Pin,MOTORDIR5_Pin,MOTORDIR6_Pin,\
                         MOTORDIR7_Pin,MOTORDIR8_Pin,MOTORDIR9_Pin,\
@@ -281,7 +279,8 @@ signed char Motor_Stop_Set(unsigned char start,unsigned char end)
     speedRampData *MtSt_P[13]={NULL,&MotorPr1,&MotorPr2,&MotorPr3,&MotorPr4,\
                                   &MotorPr5,&MotorPr6,&MotorPr7,&MotorPr8,\
                                   &MotorPr9,&MotorPr10,&MotorPr11,&MotorPr12 
-                            };    
+                            };  
+    
     if((start==0||end==0)||(start>12||end>12))
     {
         return -1;
@@ -290,8 +289,11 @@ signed char Motor_Stop_Set(unsigned char start,unsigned char end)
     {
        timer_interrupt_disable(handle[i],source[i]);
        timer_interrupt_flag_clear(handle[i],source[i]);
-       MtSt_P[i]->MotorState=0; 
-       /*此处为了规避芯片缺陷
+       MtSt_P[i]->MotorState=0;
+       MtSt_P[i]->rest=0;
+       MtSt_P[i]->step_count=0;        
+       
+        /*此处为了规避芯片缺陷
          比较输出状态停止后仍然输出低频翻转造成的抖动
          停止时强制变换管脚模式*/  
        if(i==11)
@@ -307,17 +309,17 @@ signed char Motor_Stop_Set(unsigned char start,unsigned char end)
 
 void TestFunction(void) 
 {
-      Motor_Enbl_Set(1,MOROT_UPEN);   
-      Motor_Enbl_Set(2,MOROT_UPEN); 
-      Motor_Enbl_Set(3,MOROT_UPEN);     
+      Motor_Enbl_Set(0,MOROT_UPEN);   
+//    Motor_Enbl_Set(2,MOROT_UPEN); 
+//    Motor_Enbl_Set(3,MOROT_UPEN);     
 //    GetSensorSta();
 //    delay_1ms(600);    
 //    Motor_Fault_Get();
 //    delay_1ms(600);
-      Motor_Microstep_Set(1,2);
-      Motor_Microstep_Set(2,2);
-      Motor_Microstep_Set(3,2);    
-      Motor_Current_Set(1,12,850);
+      Motor_Microstep_Set(0,2);
+//      Motor_Microstep_Set(2,2);
+//      Motor_Microstep_Set(3,2);    
+      Motor_Current_Set(1,12,550);
 //      Motor_Star_Set(1,4);
 //      delay_1ms(2*100*10);
 //      Motor_Stop_Set(11,11);

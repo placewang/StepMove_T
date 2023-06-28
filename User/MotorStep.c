@@ -21,13 +21,17 @@ speedRampData MotorPr9,MotorPr10,MotorPr11,MotorPr12;
  *  \param decel  减速度,如果取值为10，实际值为10*0.1*rad/sec^2=1rad/sec^2
  *  \param speed  Hz
  */
-int8_t stepper_move_T( uint8_t starnum,uint8_t endnum,uint8_t mode, int32_t step,
-                    uint32_t accel, uint32_t decel, uint32_t speed)
+int8_t stepper_move_T(uint8_t starnum,uint8_t endnum,uint8_t mode, int32_t step,
+                      uint32_t accel, uint32_t decel, uint32_t speed)
 { 
     speedRampData *MtPr[13]={NULL,&MotorPr1,&MotorPr2,&MotorPr3,&MotorPr4,\
                                   &MotorPr5,&MotorPr6,&MotorPr7,&MotorPr8,\
                                   &MotorPr9,&MotorPr10,&MotorPr11,&MotorPr12 
                             };
+    volatile MotorRun * Mtcr[13]={NULL,&Mt_Move_1,&Mt_Move_2,&Mt_Move_3,&Mt_Move_4,\
+                                        &Mt_Move_5,&Mt_Move_6,&Mt_Move_7,&Mt_Move_8,\
+                                        &Mt_Move_9,&Mt_Move_10,&Mt_Move_11,&Mt_Move_12    
+                                };    
 
    int32_t AbsoluteVal=0;
    int32_t  Encoder=0;   
@@ -59,7 +63,8 @@ int8_t stepper_move_T( uint8_t starnum,uint8_t endnum,uint8_t mode, int32_t step
             AbsoluteVal--;
             MtPr[i]->dir=MtPr[i]->MotEncoder>step?0:1; 
             Motor_Dir_Set(i,MtPr[i]->MotEncoder>step?0:1);
-         } 	    
+         } 	
+        Motor_Current_Set(i,i,Mtcr[i]->RunCurrent);         
         // 如果只移动一步
         if((AbsoluteVal)==0)
         {
@@ -72,7 +77,7 @@ int8_t stepper_move_T( uint8_t starnum,uint8_t endnum,uint8_t mode, int32_t step
             if(MtPr[i]->dir)
                 MtPr[i]->MotEncoder--;
             else
-                MtPr[i]->MotEncoder++;  
+                MtPr[i]->MotEncoder++;   
             // 配置电机为运行状态
             Motor_Star_Set(i,i);
         }	
@@ -272,7 +277,6 @@ signed char TIM1_Interrupt_Mt4(void)
 /*比较中断处理函数_Mt5*/
 signed char TIM8_Interrupt_Mt5(void)
 {
-    
     speed_decision(Motor5,&MotorPr5);
     timer_autoreload_value_config(TIMER8,0xffff&(MotorPr5.step_delay));    
     gpio_bit_toggle(MT5_STEP_PORT,MT5_STEP_PIN);   

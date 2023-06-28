@@ -24,9 +24,11 @@ signed char Motor_Star_Set(unsigned char,unsigned char);
 signed char Motor_Stop_Set(unsigned char,unsigned char);
 /*motor step*/
 signed char Motor_MovePos(unsigned char, unsigned int ,signed int ,unsigned char);
-int8_t stepper_move_T( uint8_t starnum,uint8_t endnum,uint8_t mode, int32_t step,
-                       uint32_t accel, uint32_t decel, uint32_t speed);
-
+int8_t stepper_move_T( uint8_t starnum,uint8_t endnum,uint8_t mode, int32_t step,uint32_t accel, uint32_t decel, uint32_t speed);
+void Motor_12B_Init(void);
+signed char MotorRest(uint8_t starnum,uint8_t endnum,uint16_t speed,int32_t offset);
+void Motor_HomeZero_Task_Loop(void);
+void Motor_ClockCurrentSet_loop(void);
 void TestFunction(void);
 #endif
 

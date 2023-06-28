@@ -98,6 +98,22 @@
 
 
 
+
+#define INPUT_1_STATE()      gpio_input_bit_get(MOTOR_IN1_PORT,MOTOR_IN1_PIN)
+#define INPUT_2_STATE()      gpio_input_bit_get(MOTOR_IN2_PORT,MOTOR_IN2_PIN)
+#define INPUT_3_STATE()      gpio_input_bit_get(MOTOR_IN3_PORT,MOTOR_IN3_PIN)
+#define INPUT_4_STATE()      gpio_input_bit_get(MOTOR_IN4_PORT,MOTOR_IN4_PIN)
+#define INPUT_5_STATE()      gpio_input_bit_get(MOTOR_IN5_PORT,MOTOR_IN5_PIN)
+#define INPUT_6_STATE()      gpio_input_bit_get(MOTOR_IN6_PORT,MOTOR_IN6_PIN)
+#define INPUT_7_STATE()      gpio_input_bit_get(MOTOR_IN7_PORT,MOTOR_IN7_PIN)
+#define INPUT_8_STATE()      gpio_input_bit_get(MOTOR_IN8_PORT,MOTOR_IN8_PIN)
+#define INPUT_9_STATE()      gpio_input_bit_get(MOTOR_IN9_PORT,MOTOR_IN9_PIN)
+#define INPUT_10_STATE()     gpio_input_bit_get(MOTOR_IN10_PORT,MOTOR_IN10_PIN)
+#define INPUT_11_STATE()     gpio_input_bit_get(MOTOR_IN11_PORT,MOTOR_IN11_PIN)
+#define INPUT_12_STATE()     gpio_input_bit_get(MOTOR_IN12_PORT,MOTOR_IN12_PIN)  
+
+
+
 void gpio_init(void);
 unsigned char GetDipSwitch_4bit(void);
 void System_Led(unsigned short time);

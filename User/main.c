@@ -30,8 +30,10 @@ int main(void)
     Timer4_PWM1_Config();
     Timer0_PWM2_Config();
     Timer3_PWM3_Config(); 
-    
+
+    Motor_12B_Init();
     TestFunction();  
+    
     delay_1ms(500);                             
 
 
@@ -43,62 +45,49 @@ int main(void)
 //    myPrint("MotEncoder4  %d\n",MotorPr4.MotEncoder);    
 //    stepper_move_T(startm,endm,0,100,1000,2000,1000);     
 //    delay_1ms(1400);
-
+          
+//     MotorRest(1,4,1000*2,-500);
+        
+           
+//    stepper_move_T(startm,endm,1,-800*300,100,400,1000*10); 
     while(1) 
     {
-       System_Led(400); 
-       stepper_move_T(startm,endm,1,-800*30,10000,9000,1000*10); 
-       delay_1ms(1000*3);          
-       myPrint("MotEncoder1  %d\n",MotorPr1.MotEncoder);
-             delay_1ms(50);  
-       myPrint("MotEncoder2  %d\n",MotorPr2.MotEncoder);
-               delay_1ms(50); 
-       myPrint("MotEncoder3  %d\n",MotorPr3.MotEncoder);
-               delay_1ms(50); 
-       myPrint("MotEncoder4  %d\n",MotorPr4.MotEncoder);
-             delay_1ms(50);
-       myPrint("MotEncoder5  %d\n",MotorPr5.MotEncoder);
-              delay_1ms(50);  
-       myPrint("MotEncoder6  %d\n",MotorPr6.MotEncoder);
-               delay_1ms(50); 
-       myPrint("MotEncoder7  %d\n",MotorPr7.MotEncoder);
-               delay_1ms(50); 
-       myPrint("MotEncoder8  %d\n",MotorPr8.MotEncoder);        
-             delay_1ms(50);
-       myPrint("MotEncoder9  %d\n",MotorPr9.MotEncoder);
-              delay_1ms(50);  
-       myPrint("MotEncoder10  %d\n",MotorPr10.MotEncoder);
-               delay_1ms(50); 
-       myPrint("MotEncoder11  %d\n",MotorPr11.MotEncoder);
-               delay_1ms(50); 
-       myPrint("MotEncoder12  %d\n",MotorPr12.MotEncoder);         
-       delay_1ms(50); 
-       stepper_move_T(startm,endm,0,0,10000,9000,1000*10); 
-       delay_1ms(1000*3);          
-       myPrint("MotEncoder1  %d\n",MotorPr1.MotEncoder);
-             delay_1ms(50);  
-       myPrint("MotEncoder2  %d\n",MotorPr2.MotEncoder);
-               delay_1ms(50); 
-       myPrint("MotEncoder3  %d\n",MotorPr3.MotEncoder);
-               delay_1ms(50); 
-       myPrint("MotEncoder4  %d\n",MotorPr4.MotEncoder);
-             delay_1ms(50);
-       myPrint("MotEncoder5  %d\n",MotorPr5.MotEncoder);
-              delay_1ms(50);  
-       myPrint("MotEncoder6  %d\n",MotorPr6.MotEncoder);
-               delay_1ms(50); 
-       myPrint("MotEncoder7  %d\n",MotorPr7.MotEncoder);
-               delay_1ms(50); 
-       myPrint("MotEncoder8  %d\n",MotorPr8.MotEncoder);        
-             delay_1ms(50);
-       myPrint("MotEncoder9  %d\n",MotorPr9.MotEncoder);
-              delay_1ms(50);  
-       myPrint("MotEncoder10  %d\n",MotorPr10.MotEncoder);
-               delay_1ms(50); 
-       myPrint("MotEncoder11  %d\n",MotorPr11.MotEncoder);
-               delay_1ms(50); 
-       myPrint("MotEncoder12  %d\n",MotorPr12.MotEncoder);         
-       delay_1ms(50);        
+        System_Led(100*10*50);
+//        if(LedTimeCount>=500)
+//        {            
+//            MotorRest(1,12,1000*10,-200);
+//            LedTimeCount=0;
+//        }   
+//       stepper_move_T(startm,endm,1,-800*30,15000,15000,1000*15); 
+//       delay_1ms(1000*3);          
+        Motor_HomeZero_Task_Loop(); 
+        Motor_ClockCurrentSet_loop();        
+//       delay_1ms(50); 
+//       stepper_move_T(startm,endm,0,0,10000,9000,1000*10); 
+//       delay_1ms(50*3);          
+//       myPrint("MotEncoder1  %d\n",MotorPr1.MotEncoder);
+//             delay_1ms(50);  
+//       myPrint("MotEncoder2  %d\n",MotorPr2.MotEncoder);
+//               delay_1ms(50); 
+//       myPrint("MotEncoder3  %d\n",MotorPr3.MotEncoder);
+//               delay_1ms(50); 
+//       myPrint("MotEncoder4  %d\n",MotorPr4.MotEncoder);
+//             delay_1ms(50);
+//       myPrint("MotEncoder5  %d\n",MotorPr5.MotEncoder);
+//              delay_1ms(50);  
+//       myPrint("MotEncoder6  %d\n",MotorPr6.MotEncoder);
+//               delay_1ms(50); 
+//       myPrint("MotEncoder7  %d\n",MotorPr7.MotEncoder);
+//               delay_1ms(50); 
+//       myPrint("MotEncoder8  %d\n",MotorPr8.MotEncoder);        
+//             delay_1ms(50);
+//       myPrint("MotEncoder9  %d\n",MotorPr9.MotEncoder);
+//              delay_1ms(50);  
+//       myPrint("MotEncoder10  %d\n",MotorPr10.MotEncoder);
+//               delay_1ms(50); 
+//       myPrint("MotEncoder11  %d\n",MotorPr11.MotEncoder);
+//               delay_1ms(50); 
+//       myPrint("MotEncoder12  %d\n",MotorPr12.MotEncoder);          
     }
 }
 

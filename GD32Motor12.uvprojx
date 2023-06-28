@@ -429,6 +429,11 @@
               <FileType>1</FileType>
               <FilePath>.\User\MotorStep.c</FilePath>
             </File>
+            <File>
+              <FileName>MotorMove.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\User\MotorMove.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
